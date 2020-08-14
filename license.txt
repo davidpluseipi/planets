@@ -1,3 +1,6 @@
+The following applies to ellipsearc.m
+Download it from MATLAB Central and use it with the following license.
+
 Copyright (c) 2010, Luc Masset
 All rights reserved.
 

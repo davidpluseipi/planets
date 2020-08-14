@@ -4,7 +4,7 @@
 clear; close all; home
 
 %% simulated function call inputs
-user_input = ["earth" "mars"]; % user must use square brackets
+user_input = ["saturn" "pluto"]; % user must use square brackets
 dd = 187; % desired day; user must input integer
 
 %% validate user input
