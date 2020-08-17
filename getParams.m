@@ -1,20 +1,9 @@
-function [output] = getaxes(varargin)
-%
-% GETAXES(planet, option) returns the scalars 'a' and 'b' that
-%   corresponds to the major and minor axes of the 'orbit'
-%
-%     'orbit' is a string that represents a name of a planet (9 possible):
-%       "jupiter" or "mercury" or "saturn" ...
-%     'option' is an optional argument that (if used) is the string "semi"
-%       that sets the GETAXES return to be semi-major and semi-minor axes
-%
-%   examples:
-%     GETAXES("earth","semi") == 1  (that is one AU)
-%     [a, b] = GETAXES("jupiter");
-%       where 'a' and 'b' are the major and minor axes of jupiter's orbit
+function [output] = getParams(varargin)
+% table = getParams("mars")
+% returns the same table of data regardless of planet you put in
 %% validate user input
-if nargin > 2
-    error('this function has a max of 2 input arguments')
+if nargin > 1
+   error('Too many input arguments')
 end
 
 if nargin >= 1
@@ -28,12 +17,7 @@ if ~contains(orbit, theplanets,'IgnoreCase',true)
     error('Select a planet from this solar system.')
 end
 
-if nargin > 1
-    option = varargin{2};
-    if contains(varargin{2},"semi",'IgnoreCase',true)
-        semi = true;
-    end
-end
+
 
 %% load data
 data = helper2_load();

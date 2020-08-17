@@ -4,13 +4,13 @@ https://github.com/davidpluseipi/planets
 To get the files, either:
 A) Navigate to the address above and download a .zip, 
 OR
-B) Install Git and "clone" the repository (instructions at the bottom)
+B) Install Git and "clone" the repository (instructions below)
 
 
 Here are the files you need:
-orbits.mat  (contains the data with the positions of each planet by day)
-main.m      (this is the main file to to review, edit and run)
-helper.m    (this helper function is called by main.m)
+orbits.dat  (contains the same data stored in data.csv)
+showday.m (show the orbits and planets on specific day)
+getaxes.m (get info on elliptical parameters)
 
 
 Good to know:

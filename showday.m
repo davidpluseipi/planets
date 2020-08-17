@@ -1,5 +1,7 @@
 function showday(varargin)
-%     showday(["neptune" "saturn" "pluto"], 895)
+% showday(["earth" "mars" "neptune"], 895)
+
+%%
 numPlanets = 9;
 
 %% validate user input
