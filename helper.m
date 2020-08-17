@@ -10,7 +10,9 @@ end
 
 dist = dist';
 planet_2b = min(dist);
+
 row_of_minor_axis = find(dist==planet_2b);
+
 if size(row_of_minor_axis,1) > 1
     row_of_minor_axis = row_of_minor_axis(1);
 end
